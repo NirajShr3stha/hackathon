@@ -9,19 +9,30 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 #delete the cookies
 driver.delete_all_cookies()
+
 #navigate to the url
 driver.get("http://localhost/chatbot/user/login.php")
+
+#inputs username
 driver.find_element_by_xpath('/html/body/div/form/div[1]/input').send_keys("niraj")
 time.sleep(1)
 
+#inputs password
 driver.find_element_by_xpath('/html/body/div/form/div[2]/input').send_keys("niraj123")
 time.sleep(1)
 
+#click on login
 driver.find_element_by_xpath('/html/body/div/form/div[3]/input').send_keys(Keys.ENTER)
 time.sleep(10)
 
+#click on appointment
+driver.find_element_by_xpath('//*[@id="appointment"]').send_keys(Keys.ENTER)
+time.sleep(6)
+
+#clicks on logout
 driver.find_element_by_xpath('/html/body/div/div/a[2]').send_keys(Keys.ENTER)
 time.sleep(10)
-#close the browser
+
+#closes the browser
 driver.close()
-print("Sucessfully Logged in")
+print("Sucessfully Logged out after testing all functions")

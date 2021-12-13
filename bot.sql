@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2021 at 09:10 AM
+-- Generation Time: Dec 12, 2021 at 07:22 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -38,9 +38,9 @@ CREATE TABLE `chatbot` (
 --
 
 INSERT INTO `chatbot` (`id`, `queries`, `replies`) VALUES
-(1, 'name, name?, what is your name', 'My name is ChatNet Assistant'),
-(2, 'location, address, located, where are you, 3, 3.', 'Here is how to get to   &nbsp; our hospital:<br>\nLagankhel Satdobato Rd, Lalitpur 44700<br>\nwww.pahs.edu.np<br>\n+97715522295'),
-(3, 'opening, opening hour, hour, visiting hour, 2, 2.', '24 Hours Health Services\n<br>\nEmergency Service, Pathology Service, Ambulance Service, Pharmacy Service, Radiology Service, Trauma and Orthopedic Service\n');
+(1, 'name, name?', 'My name is ChatNet Assistant'),
+(2, 'location, address', 'Here is how to get to   &nbsp; our hospital:<br>\nLagankhel Satdobato Rd, Lalitpur 44700<br>\nwww.pahs.edu.np<br>\n+97715522295'),
+(3, 'opening, opening hour, hour, visiting hour', '24 Hours Health Services\n<br>\nEmergency Service, Pathology Service, Ambulance Service, Pharmacy Service, Radiology Service, Trauma and Orthopedic Service\n');
 
 -- --------------------------------------------------------
 
@@ -79,8 +79,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
-(1, 'niraj', '$2y$10$peg3WxdGszv9TJjicG2vTuD9Y8lZ69wg7kMpsbB.oISqLaKX3E1gm', '2021-12-12 09:31:29'),
-(2, 'belina', '$2y$10$G/Gk3lsYNpdSJnozSCTH1e55n8xUgJRAfGS80HRb4Fb87KHwlXr9e', '2021-12-12 12:10:14');
+(1, 'niraj', '$2y$10$peg3WxdGszv9TJjicG2vTuD9Y8lZ69wg7kMpsbB.oISqLaKX3E1gm', '2021-12-12 09:31:29');
 
 --
 -- Indexes for dumped tables
@@ -125,7 +124,7 @@ ALTER TABLE `tbl_doctime`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

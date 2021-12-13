@@ -34,9 +34,9 @@ html,body{
     border-radius: 20px;
     width: 970px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
     border-top: 0px;
-    box-shadow: 5px 10px 45px #313131;
 }
 .wrapper .title{
     background: rgba(17, 20, 24, 0.8);;
@@ -157,7 +157,7 @@ button {
     font-weight: 500;
     color: rgb(7, 0, 0);
     z-index: 2;
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     
    }
    
@@ -212,10 +212,10 @@ button {
     --border-width: 5px;
    }
 
-   /* NAV MENU */
+   navmenu/* NAV MENU */
    .navmenu{
-            width: 969px; 
-            height: 55px; 
+            width: 800px; 
+            height: 35px; 
             background-color: #479e44;;
             border-radius: 5px; /* Curve the border*/
             box-shadow: -1px -1px 5px white,1px -1px 5px white; /* FOR THE BOX SHADOW*/
@@ -226,9 +226,9 @@ button {
               background-color: #479e44;;
               font-weight: bold;
               text-decoration: none;
-              line-height: 55px;
+              line-height: 35px;
               text-align: center;
-              padding: 0px 35px;
+              padding: 0px 20px;
               border-radius: 5px;
              }
    .navmenu a:hover{
