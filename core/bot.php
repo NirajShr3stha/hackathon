@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Chatsys</title>
+    <title>Clinic Assistant</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -15,17 +18,19 @@
             .wrapper .title
             {
                 font-size: 25px;
+                font-family: 'Bakbak One', cursive;
             }
         </style>
-        <div class="title">Clinic Chatbot</div>
+        <div class="title">Clinic Assistant</div>
         <div class="form">
             <div class="bot-inbox inbox">
                 <div class="icon">
                     <i class="fas fa-robot"></i>
                 </div>
                 <div class="msg-header">
-                    <p>Hello there, how can I help you?<br>
+                    <p><strong>Hello there, how can I help you?<br>
                         Please type any of the options below: <br>
+                        </strong>
                         1. Appointment<br>
                         2. Opening Hour<br>
                         3. Location<br>
@@ -35,7 +40,7 @@
         </div>
         <div class="typing-field">
             <div class="input-data">
-                <input id="data" type="text" placeholder="Type your message here.." required>
+                <input id="data" type="text" placeholder="Your queries here.." required>
                 <button id="send-btn">Send</button>
             </div>
         </div>
