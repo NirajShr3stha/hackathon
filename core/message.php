@@ -16,8 +16,13 @@ if(mysqli_num_rows($run_query) > 0){
     //storing replay to a varible which we'll send to ajax
     $replay = $fetch_data['replies'];
     echo $replay;
-}else{
-    echo "Are you crazy you you!";
+}
+else
+{
+    echo "Invalid input please type any of the options below: <br>
+    1. Appointment<br>
+    2. Opening Hour<br>
+    3. Location";
 }
 
 ?>
