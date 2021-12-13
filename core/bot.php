@@ -1,10 +1,3 @@
-<?php
-// Initialize the session
-#session_start();
- 
-// Include config file
-require_once "./connection/connection.php";
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +11,13 @@ require_once "./connection/connection.php";
 </head>
 <body>
     <div class="wrapper">
-        <div class="title">Hospital Chatbot</div>
+        <style>
+            .wrapper .title
+            {
+                font-size: 25px;
+            }
+        </style>
+        <div class="title">Clinic Chatbot</div>
         <div class="form">
             <div class="bot-inbox inbox">
                 <div class="icon">

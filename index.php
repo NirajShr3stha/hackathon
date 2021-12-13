@@ -9,7 +9,8 @@ include('connection/connection.php')
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hospital</title>
+	<title>Clinic</title>
+	
 </head>
 
 <body>

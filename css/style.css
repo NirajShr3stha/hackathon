@@ -41,7 +41,7 @@ html,body{
 .wrapper .title{
     background: #ff0055;
     color: #fff;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 60px;
     text-align: center;
@@ -132,14 +132,14 @@ html,body{
     height: 30px;
     width: 65px;
     color: #fff;
-    font-size: 16px;
+    font-size: 10px;
     cursor: pointer;
     outline: none;
     opacity: 0;
     pointer-events: none;
     border-radius: 3px;
-    background: #007bff;
-    border: 1px solid #007bff;
+    background: #000102;
+    border: 1px solid #000305;
     transform: translateY(-50%);
     transition: all 0.3s ease;
 }
@@ -148,7 +148,7 @@ html,body{
     pointer-events: auto;
 }
 .typing-field .input-data button:hover{
-    background: #006fef;
+    background: #060607;
 }
 
 button {
