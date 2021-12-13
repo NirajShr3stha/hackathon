@@ -21,37 +21,15 @@
         <div class="form">
             <div class="bot-inbox inbox">
                 <div class="icon">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-robot"></i>
                 </div>
                 <div class="msg-header">
-                    <p>Hello there, how can I help you?</p>
-
-                    <?php
-                        if(array_key_exists('button1', $_POST)) {
-                            button1();
-                        }
-                        else if(array_key_exists('button2', $_POST)) {
-                            button2();
-                        }
-                        else if(array_key_exists('button3', $_POST)) {
-                            button3();
-                        }
-                        function button1() {
-                            echo "Can i know if any doctors are available?";
-                        }
-                        function button2() {
-                            echo "Can I know your location?";
-                        }
-                        function button3() {
-                            echo "What is your opening hour?";
-                        }
-                    ?>
-                    <br>
-                    <form method="post">
-                        <button type="submit" name="button1" id="button1">Appointment</button>
-                        <button type="submit" name="button2" id="button2">Location</button>
-                        <button type="submit" name="button3" id="button3">Opening Hour</button>
-                    </form>
+                    <p>Hello there, how can I help you?<br>
+                        Please type any of the options below: <br>
+                        1. Appointment<br>
+                        2. Opening Hour<br>
+                        3. Location<br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -62,31 +40,6 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-        $(document).ready(function(){
-            $("#showData").on("click", function(){
-                $value = $("#button1").val();
-                $msg = '<div class="user-inbox inbox"><div class="msg-header"><p>'+ $value +'</p></div></div>';
-                $(".form").append($msg);
-                $("#button1").val('');
-                
-                // start ajax code
-                $.ajax({
-                    url: './core/message.php',
-                    type: 'POST',
-                    data: 'text='Appointment,
-                    success: function(result){
-                        $replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ result +'</p></div></div>';
-                        $(".form").append($replay);
-                        // when chat goes down the scroll bar automatically comes to the bottom
-                        $(".form").scrollTop($(".form")[0].scrollHeight);
-                    }
-                });
-            });
-        });
-    </script>
 
     <script>
         $(document).ready(function(){
@@ -102,7 +55,7 @@
                     type: 'POST',
                     data: 'text='+$value,
                     success: function(result){
-                        $replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ result +'</p></div></div>';
+                        $replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-robot"></i></div><div class="msg-header"><p>'+ result +'</p></div></div>';
                         $(".form").append($replay);
                         // when chat goes down the scroll bar automatically comes to the bottom
                         $(".form").scrollTop($(".form")[0].scrollHeight);
