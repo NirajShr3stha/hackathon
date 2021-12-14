@@ -94,7 +94,7 @@ html,body{
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    background: #0c0c0c;
+    background: rgba(17, 20, 24, 0.8);
     border-top: 1px solid #8d0000;
     border-radius: 0 0 5px 5px;
 }
