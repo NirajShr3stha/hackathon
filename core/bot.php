@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,11 @@
                 font-size: 25px;
             }
         </style>
-        <div class="title">Clinic Chatbot</div>
+        
+        <div class="title">
+            <img src="./css/image/offline.png">    
+            Clinic Chatbot
+        </div>
         <div class="form">
             <div class="bot-inbox inbox">
                 <div class="icon">
